@@ -119,6 +119,8 @@ def trainer():
             if check == 'r':
                 print("Ok, korrigiert! ✅")
                 score += 1
+            else:
+                items.insert(items.index((deutsch, franz)) + 11, (deutsch, franz))
         print("-" * 30)
 
     print(f"\nTraining beendet! Dein Score: {score}/{len(vokabeln)}")
